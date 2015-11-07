@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MuJJ-Gaming Club Packages Repository</title>
+</head>
+
+<body>
+<h1>MuJJ-Gaming Club Packages Repository</h1>
+<hr />
+OpenWrt Version
+<select id="ver">
+<option value="uclibc">Breaker Barrier</option>
+<option value="uclibc">Chaos Calmer</option>
+</select>
+Chip
+<select id="chip">
+<option value="ar71xx">Atheros AR71xx/93xx</option>
+<option value="brcm47xx">Broadcom BCM4716/4718/4706</option>
+</select>
+<p>
+<textarea cols="80" rows="5" id="res"></textarea>
+</p>
+<script type="text/javascript">
+(function(){
+	function $(id) {
+		return document.getElementById(id);
+	}
+	function buildConf() {
+		$("res").innerText = "src/gz mujjus http://mujjus.github.io/openwrt/" + $("ver").value + "/" + $("chip").value;
+	}
+	$("ver").onchange = $("chip").onchange = function() {
+		buildConf();
+	}
+	buildConf();
+})();
+</script>
+<p>
+Visit <a href="http://mujj.us/">MuJJ-Gaming Club</a>, <a href="https://github.com/MuJJus">GitHub</a>.
+</p>
+Hosted by <a href="https://pages.github.com">GitHub Pages</a>
+</body>
+</html>
+

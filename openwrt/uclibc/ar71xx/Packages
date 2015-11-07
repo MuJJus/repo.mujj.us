@@ -1,0 +1,73 @@
+Package: cpulimit-ng
+Version: 1.2-1
+Depends: libc
+Source: /home/jason/openwrt-maz1/cpulimit-ng
+Section: utils
+Architecture: ar71xx
+Installed-Size: 7031
+Filename: cpulimit-ng_1.2-1_ar71xx.ipk
+Size: 7590
+MD5Sum: c8e73997a05b8c1e2af4cd2ee45c1635
+SHA256sum: 35da83796ffb213492811a32d283e7920ac3c0b8f6334a8e8db49a4251f3d2cd
+Description:  CPU Usage Limiter for Linux
+
+Package: doghole
+Version: 0.3-1
+Depends: libc, dnsmasq-full, ip, ipset, iptables, iptables-mod-ipopt, shadowvpn, luci-proto-shadowvpn, luci-app-commands, ChinaDNS, luci-app-chinadns
+Source: /home/jason/doghole
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jason Tse <jasontsecode@gmail.com>
+Architecture: all
+Installed-Size: 48600
+Filename: doghole_0.3-1_all.ipk
+Size: 49826
+MD5Sum: a12f9ea904d8096cd76d3aadecdc8e26
+SHA256sum: be61e08dbfa11a9b64052ee3ccf3b8e8665b17b65d9df1ad406d79cffbf054ce
+Description:  Science networking solution based on ShadowVPN
+
+Package: luci-app-cpulimit
+Version: 1.4-1
+Depends: libc, cpulimit-ng
+Source: /home/jason/openwrt-maz1/luci-cpulimit
+Section: luci
+Maintainer: Jeroen Louwes <jeroen.louwes@gmail.com>
+Architecture: ar71xx
+Installed-Size: 1957
+Filename: luci-app-cpulimit_1.4-1_ar71xx.ipk
+Size: 2549
+MD5Sum: ac0295cfb0ebed3c5ec8d781177a77d6
+SHA256sum: 3ece4fddfee66b5fc194a367ec5e2f9bfcf98ccbcaebe64334b221efa1c10b88
+Description:  A hotplug script that makes configuration of cpulimit.
+
+Package: n2n-edge
+Version: 2.1_svn9343-1
+Depends: libc, kmod-tun, resolveip
+Source: /home/jason/openwrt-n2n
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Architecture: ar71xx
+Installed-Size: 23929
+Filename: n2n-edge_2.1_svn9343-1_ar71xx.ipk
+Size: 24459
+MD5Sum: 4ca7bb283f944871a851a0a6d0f70873
+SHA256sum: f7670be7d7fc2d6c30bf04c4c929cb7d3e7709c9c7fe0ed622fab2e499ba72ff
+Description:  N2N VPN tunneling daemon(V2)
+
+Package: n2n-supernode
+Version: 2.1_svn9343-1
+Depends: libc, kmod-tun, resolveip
+Source: /home/jason/openwrt-n2n
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Architecture: ar71xx
+Installed-Size: 7731
+Filename: n2n-supernode_2.1_svn9343-1_ar71xx.ipk
+Size: 8395
+MD5Sum: ad5fad3e1090fe2dd6295b19dacc8f2c
+SHA256sum: b8f4df887d020cc27b61141da7ce7b45d928f94e9d7e3ed25f7ab6e0afef31fb
+Description:  N2N VPN tunneling daemon(V2)
+

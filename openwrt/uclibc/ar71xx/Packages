@@ -34,11 +34,11 @@ Source: /home/jason/openwrt-maz1/luci-cpulimit
 Section: luci
 Maintainer: Jeroen Louwes <jeroen.louwes@gmail.com>
 Architecture: ar71xx
-Installed-Size: 1957
+Installed-Size: 1974
 Filename: luci-app-cpulimit_1.4-1_ar71xx.ipk
-Size: 2549
-MD5Sum: ac0295cfb0ebed3c5ec8d781177a77d6
-SHA256sum: 3ece4fddfee66b5fc194a367ec5e2f9bfcf98ccbcaebe64334b221efa1c10b88
+Size: 2565
+MD5Sum: 3ff0af0a32b2fe81f2b06c8ba73a7ab0
+SHA256sum: 5cb67dc2e5d72594e6e3768a2df3b5a4e7444b6dd09998a7126cb8e838b7a37b
 Description:  A hotplug script that makes configuration of cpulimit.
 
 Package: n2n-edge
@@ -49,11 +49,11 @@ License: GPLv3
 LicenseFiles: LICENSE
 Section: net
 Architecture: ar71xx
-Installed-Size: 23929
+Installed-Size: 23923
 Filename: n2n-edge_2.1_svn9343-1_ar71xx.ipk
-Size: 24459
-MD5Sum: 4ca7bb283f944871a851a0a6d0f70873
-SHA256sum: f7670be7d7fc2d6c30bf04c4c929cb7d3e7709c9c7fe0ed622fab2e499ba72ff
+Size: 24455
+MD5Sum: fa8390da5eec361f6a72535c4d547971
+SHA256sum: 8d970a5e1d0e9bbcf409defa6efc5f7b109eae4ec312adf03cd80149138b2c93
 Description:  N2N VPN tunneling daemon(V2)
 
 Package: n2n-supernode
@@ -64,10 +64,10 @@ License: GPLv3
 LicenseFiles: LICENSE
 Section: net
 Architecture: ar71xx
-Installed-Size: 7731
+Installed-Size: 7729
 Filename: n2n-supernode_2.1_svn9343-1_ar71xx.ipk
-Size: 8395
-MD5Sum: ad5fad3e1090fe2dd6295b19dacc8f2c
-SHA256sum: b8f4df887d020cc27b61141da7ce7b45d928f94e9d7e3ed25f7ab6e0afef31fb
+Size: 8393
+MD5Sum: 80d1f5d059680b812865412cad83e560
+SHA256sum: 9da221315c85bb0d8297e066ee794173d954494a77185fe45456228a56f6a028
 Description:  N2N VPN tunneling daemon(V2)
 

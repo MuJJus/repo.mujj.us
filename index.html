@@ -27,7 +27,7 @@ Chip
 		return document.getElementById(id);
 	}
 	function buildConf() {
-		$("res").innerText = "src/gz mujjus http://mujjus.github.io/openwrt/" + $("ver").value + "/" + $("chip").value;
+		$("res").innerText = "src/gz mujjus http://repo.mujj.us/openwrt/" + $("ver").value + "/" + $("chip").value;
 	}
 	$("ver").onchange = $("chip").onchange = function() {
 		buildConf();

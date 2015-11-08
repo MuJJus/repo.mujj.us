@@ -71,3 +71,16 @@ MD5Sum: 80d1f5d059680b812865412cad83e560
 SHA256sum: 9da221315c85bb0d8297e066ee794173d954494a77185fe45456228a56f6a028
 Description:  N2N VPN tunneling daemon(V2)
 
+Package: pptpd
+Version: 1.4.0-1
+Depends: libc, kmod-ppp, kmod-gre, kmod-mppe, ppp
+Source: /home/jason/packages/net/pptpd
+Section: net
+Architecture: ar71xx
+Installed-Size: 25328
+Filename: pptpd_1.4.0-1_ar71xx.ipk
+Size: 25777
+MD5Sum: a9a33469bb2a4be3b6ff5aa09c2c6a40
+SHA256sum: 1ce2ba90bd9465d7b5a744149e5c1e9c54b9ad10320c7337c6a4761953e74b89
+Description:  PopTop pptp server
+

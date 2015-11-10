@@ -1,0 +1,59 @@
+Package: doghole
+Version: 0.3-1
+Depends: libc, dnsmasq-full, ip, ipset, iptables, iptables-mod-ipopt, shadowvpn, luci-proto-shadowvpn, luci-app-commands, ChinaDNS, luci-app-chinadns
+Source: /home/jason/doghole
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jason Tse <jasontsecode@gmail.com>
+Architecture: all
+Installed-Size: 48598
+Filename: doghole_0.3-1_all.ipk
+Size: 49937
+MD5Sum: 3e67bab532c77d2fec2e433f34f4f348
+SHA256sum: 2d0a40f53ccac98d9388bc8babe1d8bb277253bcba2710ba337f8d725a6ca23d
+Description:  Science networking solution based on ShadowVPN
+
+Package: n2n-edge
+Version: 2.1_svn9343-1
+Depends: libc, kmod-tun, resolveip
+Source: /home/jason/openwrt-n2n
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Architecture: ar71xx
+Installed-Size: 23922
+Filename: n2n-edge_2.1_svn9343-1_ar71xx.ipk
+Size: 24611
+MD5Sum: 242f879d30bf0a3afe4f1b519942099a
+SHA256sum: a0feb5bd328e5bbbc532ab5c044d8a0613a5b23c80ace9214573996e67487449
+Description:  N2N VPN tunneling daemon(V2)
+
+Package: n2n-supernode
+Version: 2.1_svn9343-1
+Depends: libc, kmod-tun, resolveip
+Source: /home/jason/openwrt-n2n
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Architecture: ar71xx
+Installed-Size: 7733
+Filename: n2n-supernode_2.1_svn9343-1_ar71xx.ipk
+Size: 8551
+MD5Sum: 09fbe27473d6dd524978f95d23811dab
+SHA256sum: 4a5f5e82cdd6b61109d36a8f6a8ff6feef1aa6d898fa50d505af70567fb1c6b4
+Description:  N2N VPN tunneling daemon(V2)
+
+Package: pptpd
+Version: 1.4.0-1
+Depends: libc, kmod-ppp, kmod-gre, kmod-mppe, ppp
+Source: /home/jason/oldpackages/net/pptpd
+Section: net
+Architecture: ar71xx
+Installed-Size: 25328
+Filename: pptpd_1.4.0-1_ar71xx.ipk
+Size: 25926
+MD5Sum: 14f1a97e5174c072c09cb721b820aa61
+SHA256sum: 8ada63aa88909bc020cdcb0121b62d38975c2e1a758307236bbd9627bdc34807
+Description:  PopTop pptp server
+

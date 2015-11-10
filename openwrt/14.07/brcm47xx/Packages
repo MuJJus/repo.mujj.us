@@ -1,0 +1,111 @@
+Package: dnsmasq-dhcpv6
+Version: 2.66-3
+Depends: libc, kmod-ipv6
+Source: /home/jason/dnsmasq-openwrt
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm47xx
+Installed-Size: 93378
+Filename: dnsmasq-dhcpv6_2.66-3_brcm47xx.ipk
+Size: 94077
+MD5Sum: 7efb9d02412f89c63d497676bb5488a1
+SHA256sum: 57ec584c64b82b2e9a23745cd5ecc979c47f8ff46480c8e54914f4fc0727ed87
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+ 
+ This is a variant with DHCPv6 support
+
+Package: dnsmasq-full
+Version: 2.66-3
+Depends: libc, kmod-ipv6, libnettle
+Source: /home/jason/dnsmasq-openwrt
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm47xx
+Installed-Size: 98123
+Filename: dnsmasq-full_2.66-3_brcm47xx.ipk
+Size: 98861
+MD5Sum: bdbbfe0e4d32ae147e4942155e1fa5e9
+SHA256sum: 216b1a96e87c59025ce6110995a5ee0e98344dc51fc11f238555586f6e0cdf0b
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+ 
+ This is a variant with DHCPv6, DNSSEC, Authroitative DNS and IPSET support
+
+Package: dnsmasq
+Version: 2.66-3
+Depends: libc
+Source: /home/jason/dnsmasq-openwrt
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm47xx
+Installed-Size: 79138
+Filename: dnsmasq_2.66-3_brcm47xx.ipk
+Size: 79827
+MD5Sum: 227d99a60ce094350f7f10d0740b4f90
+SHA256sum: 15b4b195964e3d1b18bf9b95feeba6ba3e73beef8985a25874473c5c8450af5f
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+
+Package: doghole
+Version: 0.3-1
+Depends: libc, dnsmasq-full, ip, ipset, iptables, iptables-mod-ipopt, shadowvpn, luci-proto-shadowvpn, luci-app-commands, ChinaDNS, luci-app-chinadns
+Source: /home/jason/doghole
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jason Tse <jasontsecode@gmail.com>
+Architecture: all
+Installed-Size: 48595
+Filename: doghole_0.3-1_all.ipk
+Size: 49821
+MD5Sum: 1912098ad40418043a1719350130b9b3
+SHA256sum: 38f2073252b3bea07e7263a067bbac8091bb69796fae8659e3afd7a2bbea28d1
+Description:  Science networking solution based on ShadowVPN
+
+Package: kmod-fs-exfat
+Version: 3.10.49+git-20150828-1
+Depends: kernel, kmod-nls-base
+Source: /home/jason/packages/kernel/exfat-nofuse
+License: GPL-2.0
+LicenseFiles: LICENSE
+Section: kernel
+Maintainer: Bruno Randolf <br1@einfach.org>
+Architecture: brcm47xx
+Installed-Size: 45243
+Filename: kmod-fs-exfat_3.10.49+git-20150828-1_brcm47xx.ipk
+Size: 45914
+MD5Sum: 1da58684bf52656f84a83ce648d9b467
+SHA256sum: 5c84a1a9e2a3f33ed3ffb28bb726be2411c698a179882863dc68038f25d9dc85
+Description:  Kernel module for ExFAT Filesytems
+
+Package: n2n-edge
+Version: 2.1_svn9343-1
+Depends: libc, kmod-tun, resolveip
+Source: /home/jason/openwrt-n2n
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Architecture: brcm47xx
+Installed-Size: 24093
+Filename: n2n-edge_2.1_svn9343-1_brcm47xx.ipk
+Size: 24656
+MD5Sum: 50df9e3e458d1ee6f116a17a43613494
+SHA256sum: a2c28547f0eac6fdfda6240c95fb8d8c4831d874bbdeaa650d12268be0b716b3
+Description:  N2N VPN tunneling daemon(V2)
+
+Package: n2n-supernode
+Version: 2.1_svn9343-1
+Depends: libc, kmod-tun, resolveip
+Source: /home/jason/openwrt-n2n
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Architecture: brcm47xx
+Installed-Size: 7714
+Filename: n2n-supernode_2.1_svn9343-1_brcm47xx.ipk
+Size: 8374
+MD5Sum: 7a0259f5ab97aaaf8ca1ed545891afd0
+SHA256sum: e05dc861c5e7670d440f3b5dfe66855af71ed25b6f53cbcf182275b51f1db2ae
+Description:  N2N VPN tunneling daemon(V2)
+

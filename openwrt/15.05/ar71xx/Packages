@@ -1,59 +1,221 @@
+Package: ChinaDNS
+Version: 1.3.2-2
+Depends: libc
+Source: /home/jason/openwrtpkg/sources/openwrt-chinadns
+License: GPLv3
+LicenseFiles: COPYING
+Section: net
+Maintainer: clowwindy <clowwindy42@gmail.com>
+Architecture: ar71xx
+Installed-Size: 24942
+Filename: ChinaDNS_1.3.2-2_ar71xx.ipk
+Size: 25316
+MD5Sum: 166ee534f14234b40239242b29f6932f
+SHA256sum: 008577275634ef75ad8b99ff1c0613abbf890178b4864809e8306a03c024af3b
+Description:  A DNS forwarder that ignores incorrect(you knew it) responses.
+
 Package: doghole
 Version: 0.3-1
 Depends: libc, dnsmasq-full, ip, ipset, iptables, iptables-mod-ipopt, shadowvpn, luci-proto-shadowvpn, luci-app-commands, ChinaDNS, luci-app-chinadns
-Source: /home/jason/doghole
+Source: /home/jason/openwrtpkg/sources/doghole
 License: GPLv3
 LicenseFiles: LICENSE
 Section: net
 Maintainer: Jason Tse <jasontsecode@gmail.com>
 Architecture: all
-Installed-Size: 48598
+Installed-Size: 48421
 Filename: doghole_0.3-1_all.ipk
-Size: 49937
-MD5Sum: 3e67bab532c77d2fec2e433f34f4f348
-SHA256sum: 2d0a40f53ccac98d9388bc8babe1d8bb277253bcba2710ba337f8d725a6ca23d
+Size: 49763
+MD5Sum: 3caf9f562385a4523395bd8a06bbae12
+SHA256sum: 19392e7dc901d6d222e7b169af3afd1343f21d61dee42d919425e499009815e4
 Description:  Science networking solution based on ShadowVPN
+
+Package: luci-app-chinadns
+Version: 1.3.6-1
+Depends: libc
+Source: /home/jason/openwrtpkg/sources/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: aa65535 <aa65535@live.com>
+Architecture: all
+Installed-Size: 1517
+Filename: luci-app-chinadns_1.3.6-1_all.ipk
+Size: 2372
+MD5Sum: a34f1331399fae54adb00b05122da9fc
+SHA256sum: 28835788fd0b92fe1612ed985b89ccc2b81cf898fe4b39ed063f960759bb471c
+Description:  LuCI Support for ChinaDNS.
+
+Package: luci-app-radius
+Version: 0.1-1
+Depends: libc, freeradius2-democerts, freeradius2-mod-eap-mschapv2, freeradius2-mod-eap-peap, freeradius2-mod-eap-tls, freeradius2-mod-files
+Source: /home/jason/openwrtpkg/sources/luci-app-radius
+License: GPLv2
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jason Tse <jasontsecode@gmail.com>
+Architecture: all
+Installed-Size: 1517
+Filename: luci-app-radius_0.1-1_all.ipk
+Size: 2396
+MD5Sum: be46fe42834d11a4a5dfb4c4adad33db
+SHA256sum: 2f5523bfd0b93c0c4ce350c04dddad0c8c0585494507593cf2f958eca3d0ff3e
+Description:  Radius Server Management
+
+Package: luci-app-redsocks2
+Version: 1.3.6-1
+Depends: libc
+Source: /home/jason/openwrtpkg/sources/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: aa65535 <aa65535@live.com>
+Architecture: all
+Installed-Size: 1467
+Filename: luci-app-redsocks2_1.3.6-1_all.ipk
+Size: 2320
+MD5Sum: 1c842c6a875d5d8ba5763861be51a36a
+SHA256sum: 9b84ab704a85eae9a0a5a52e717229c9e01a28d1f42df16fa4ed096be9ec09ab
+Description:  LuCI Support for RedSocks2.
+
+Package: luci-proto-n2n
+Version: 1.0-6
+Depends: libc, n2n-edge
+Source: /home/jason/openwrtpkg/sources/luci-proto-n2n
+License: GPLv3
+LicenseFiles: LICENSE
+Section: LuCI
+Maintainer: Jason Tse <jasontsecode@gmail.com>
+Architecture: all
+Installed-Size: 1813
+Filename: luci-proto-n2n_1.0-6_all.ipk
+Size: 2551
+MD5Sum: cbb5a164f8a1e8ddf7d0789ab031fc8c
+SHA256sum: d9631ef5d2ce308d2c4cc844eebb1625c2ab2b9c11293ca0bac66780c229854c
+Description:  N2N VPN protocol support for LuCI
+
+Package: luci-proto-shadowvpn
+Version: 1.0-2
+Depends: libc, shadowvpn
+Source: /home/jason/openwrtpkg/sources/luci-proto-shadowvpn
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jason Tse <jasontsecode@gmail.com>
+Architecture: all
+Installed-Size: 985
+Filename: luci-proto-shadowvpn_1.0-2_all.ipk
+Size: 1760
+MD5Sum: d7d1bce03517eedf7c3aebd49a008a07
+SHA256sum: 9666a5967dcf42c7d948655a2f7c49a4f084882929d7802aac3c76b8b828d813
+Description:  ShadowVPN protocol support for LuCI
 
 Package: n2n-edge
 Version: 2.1_svn9343-1
 Depends: libc, kmod-tun, resolveip
-Source: /home/jason/openwrt-n2n
+Source: /home/jason/openwrtpkg/sources/openwrt-n2n
 License: GPLv3
 LicenseFiles: LICENSE
 Section: net
 Architecture: ar71xx
-Installed-Size: 23922
+Installed-Size: 23993
 Filename: n2n-edge_2.1_svn9343-1_ar71xx.ipk
-Size: 24611
-MD5Sum: 242f879d30bf0a3afe4f1b519942099a
-SHA256sum: a0feb5bd328e5bbbc532ab5c044d8a0613a5b23c80ace9214573996e67487449
+Size: 24685
+MD5Sum: c70bfb13a5a9b1169b3b6fa63d06a4f7
+SHA256sum: fd4555602cfc6896c8e5ed221171425b6bae93375c0473393d0a3841304b7469
 Description:  N2N VPN tunneling daemon(V2)
 
 Package: n2n-supernode
 Version: 2.1_svn9343-1
 Depends: libc, kmod-tun, resolveip
-Source: /home/jason/openwrt-n2n
+Source: /home/jason/openwrtpkg/sources/openwrt-n2n
 License: GPLv3
 LicenseFiles: LICENSE
 Section: net
 Architecture: ar71xx
-Installed-Size: 7733
+Installed-Size: 7729
 Filename: n2n-supernode_2.1_svn9343-1_ar71xx.ipk
-Size: 8551
-MD5Sum: 09fbe27473d6dd524978f95d23811dab
-SHA256sum: 4a5f5e82cdd6b61109d36a8f6a8ff6feef1aa6d898fa50d505af70567fb1c6b4
+Size: 8552
+MD5Sum: abf47064a973952e7e227b32faf02304
+SHA256sum: eb8a8f45c87333d9487d0bb62ee56e4063b9b6664d1345639141d770dbc5e149
 Description:  N2N VPN tunneling daemon(V2)
 
 Package: pptpd
-Version: 1.4.0-1
+Version: 1.4.0-2
 Depends: libc, kmod-ppp, kmod-gre, kmod-mppe, ppp
-Source: /home/jason/oldpackages/net/pptpd
+Source: /home/jason/openwrtpkg/sources/packages/net/pptpd
 Section: net
+Maintainer: Luka Perkov <luka@openwrt.org>
 Architecture: ar71xx
-Installed-Size: 25328
-Filename: pptpd_1.4.0-1_ar71xx.ipk
-Size: 25926
-MD5Sum: 14f1a97e5174c072c09cb721b820aa61
-SHA256sum: 8ada63aa88909bc020cdcb0121b62d38975c2e1a758307236bbd9627bdc34807
+Installed-Size: 25046
+Filename: pptpd_1.4.0-2_ar71xx.ipk
+Size: 25685
+MD5Sum: 7efc48c29b2b18ac8f329319e5baedbb
+SHA256sum: 76c294b853b5a3296599d5225a28077bbde4bde45e01aa81cf1f7b7f917cd445
 Description:  PopTop pptp server
+
+Package: redsocks2
+Version: 0.60-2
+Depends: libc, libevent2
+Source: /home/jason/openwrtpkg/sources/openwrt-redsocks2
+License: GPLv2
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Zhuofei Wang <SemigodKing@gmail.com>
+Architecture: ar71xx
+Installed-Size: 44463
+Filename: redsocks2_0.60-2_ar71xx.ipk
+Size: 45263
+MD5Sum: 9267950b74a136ea8b1600b2bcd460c2
+SHA256sum: 2cea11b4bee4a02c70a2ebdf0e83f9c388a602f0da6bd8751a684d759b90693b
+Description:  This is a modified version of original redsocks. The name is changed to be REDSOCKS2 since this release to distinguish with original redsocks. This variant is useful for anti-GFW (Great Fire Wall).
+
+Package: shadowsocks-libev-polarssl
+Version: 2.4.1-1
+Depends: libc, libpolarssl, libpthread
+Source: /home/jason/openwrtpkg/sources/openwrt-shadowsocks
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Architecture: ar71xx
+Installed-Size: 171157
+Filename: shadowsocks-libev-polarssl_2.4.1-1_ar71xx.ipk
+Size: 170684
+MD5Sum: 8ea1c57f8bb623d063452826047c3d92
+SHA256sum: 79498c1e167449566d786a60f1d1216a0c3b68c28fabcd4fddb52c6d0af656da
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: shadowsocks-libev
+Version: 2.4.1-1
+Depends: libc, libopenssl, libpthread
+Source: /home/jason/openwrtpkg/sources/openwrt-shadowsocks
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Architecture: ar71xx
+Installed-Size: 169283
+Filename: shadowsocks-libev_2.4.1-1_ar71xx.ipk
+Size: 168831
+MD5Sum: ba4572ba5d3957b41f1ed1e9ce4f463a
+SHA256sum: f62e33c4df2f425e2b3a672661ad321d72568183d8000402e6ff4f8498d9e9ad
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: shadowvpn
+Version: 0.2.0-1
+Depends: libc, kmod-tun, resolveip
+Source: /home/jason/openwrtpkg/sources/openwrt-shadowvpn
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: clowwindy <clowwindy42@gmail.com>
+Architecture: ar71xx
+Installed-Size: 44515
+Filename: shadowvpn_0.2.0-1_ar71xx.ipk
+Size: 44864
+MD5Sum: 0336a877ea4e24ea3a7e5fe91fc58286
+SHA256sum: 107e1fd3229d98ba14248e85cc21f2d39f1eadcb09537cf69a5781c003e086d5
+Description:  A fast, safe VPN based on libsodium
+ with native interface protocol support
 

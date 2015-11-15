@@ -1,33 +1,32 @@
-Package: dnsmasq-dhcpv6
-Version: 2.66-3
-Depends: libc, kmod-ipv6
-Source: /home/jason/dnsmasq-openwrt
-License: GPL-2.0
+Package: ChinaDNS
+Version: 1.3.2-2
+Depends: libc
+Source: /home/jason/openwrtpkg/sources/openwrt-chinadns
+License: GPLv3
 LicenseFiles: COPYING
 Section: net
+Maintainer: clowwindy <clowwindy42@gmail.com>
 Architecture: brcm47xx
-Installed-Size: 93378
-Filename: dnsmasq-dhcpv6_2.66-3_brcm47xx.ipk
-Size: 94077
-MD5Sum: 7efb9d02412f89c63d497676bb5488a1
-SHA256sum: 57ec584c64b82b2e9a23745cd5ecc979c47f8ff46480c8e54914f4fc0727ed87
-Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
- 
- This is a variant with DHCPv6 support
+Installed-Size: 25043
+Filename: ChinaDNS_1.3.2-2_brcm47xx.ipk
+Size: 25196
+MD5Sum: ee33749e679879ad29faeb7d48a39997
+SHA256sum: 3042df5678766cce68a9278c6c0ca48e83784c824edfd8a3b4931fe74b45dcce
+Description:  A DNS forwarder that ignores incorrect(you knew it) responses.
 
 Package: dnsmasq-full
 Version: 2.66-3
 Depends: libc, kmod-ipv6, libnettle
-Source: /home/jason/dnsmasq-openwrt
+Source: /home/jason/openwrtpkg/sources/dnsmasq-openwrt
 License: GPL-2.0
 LicenseFiles: COPYING
 Section: net
 Architecture: brcm47xx
-Installed-Size: 98123
+Installed-Size: 98108
 Filename: dnsmasq-full_2.66-3_brcm47xx.ipk
-Size: 98861
-MD5Sum: bdbbfe0e4d32ae147e4942155e1fa5e9
-SHA256sum: 216b1a96e87c59025ce6110995a5ee0e98344dc51fc11f238555586f6e0cdf0b
+Size: 98862
+MD5Sum: b057a20b4739cd3db36b2b32cf72f04c
+SHA256sum: 86ab894ce17ccf0c0f0bd4824b3c4f4fab49f34298f7bb96e6b365de31dac9a3
 Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
  
  This is a variant with DHCPv6, DNSSEC, Authroitative DNS and IPSET support
@@ -35,77 +34,222 @@ Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
 Package: dnsmasq
 Version: 2.66-3
 Depends: libc
-Source: /home/jason/dnsmasq-openwrt
+Source: /home/jason/openwrtpkg/sources/dnsmasq-openwrt
 License: GPL-2.0
 LicenseFiles: COPYING
 Section: net
 Architecture: brcm47xx
-Installed-Size: 79138
+Installed-Size: 79127
 Filename: dnsmasq_2.66-3_brcm47xx.ipk
-Size: 79827
-MD5Sum: 227d99a60ce094350f7f10d0740b4f90
-SHA256sum: 15b4b195964e3d1b18bf9b95feeba6ba3e73beef8985a25874473c5c8450af5f
+Size: 79826
+MD5Sum: a8765d2e4d69fc75ebe79513a49318f9
+SHA256sum: 4be4a52da1a07cf2310fbb8c4685014fe5464e6c5cee615d025e1a19647f0dc7
 Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
 
 Package: doghole
 Version: 0.3-1
 Depends: libc, dnsmasq-full, ip, ipset, iptables, iptables-mod-ipopt, shadowvpn, luci-proto-shadowvpn, luci-app-commands, ChinaDNS, luci-app-chinadns
-Source: /home/jason/doghole
+Source: /home/jason/openwrtpkg/sources/doghole
 License: GPLv3
 LicenseFiles: LICENSE
 Section: net
 Maintainer: Jason Tse <jasontsecode@gmail.com>
 Architecture: all
-Installed-Size: 48595
+Installed-Size: 48418
 Filename: doghole_0.3-1_all.ipk
-Size: 49821
-MD5Sum: 1912098ad40418043a1719350130b9b3
-SHA256sum: 38f2073252b3bea07e7263a067bbac8091bb69796fae8659e3afd7a2bbea28d1
+Size: 49664
+MD5Sum: 0ee112148363b45701f989c82f66db60
+SHA256sum: 7717e253881e2ab9a185cd056e1521e9ba1d72f0946e3e1dcb8a1be47f9fbe6e
 Description:  Science networking solution based on ShadowVPN
 
 Package: kmod-fs-exfat
 Version: 3.10.49+git-20150828-1
 Depends: kernel, kmod-nls-base
-Source: /home/jason/packages/kernel/exfat-nofuse
+Source: /home/jason/openwrtpkg/sources/packages/kernel/exfat-nofuse
 License: GPL-2.0
 LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Bruno Randolf <br1@einfach.org>
 Architecture: brcm47xx
-Installed-Size: 45243
+Installed-Size: 45261
 Filename: kmod-fs-exfat_3.10.49+git-20150828-1_brcm47xx.ipk
-Size: 45914
-MD5Sum: 1da58684bf52656f84a83ce648d9b467
-SHA256sum: 5c84a1a9e2a3f33ed3ffb28bb726be2411c698a179882863dc68038f25d9dc85
+Size: 45952
+MD5Sum: 320081e3c74bdb3ce7096117d4033e4d
+SHA256sum: 6691a809e4596c715e46f84f787ffd8968948c27b2ef89ae2d9761dbbfef16c9
 Description:  Kernel module for ExFAT Filesytems
+
+Package: luci-app-chinadns
+Version: 1.3.6-1
+Depends: libc
+Source: /home/jason/openwrtpkg/sources/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: aa65535 <aa65535@live.com>
+Architecture: all
+Installed-Size: 1520
+Filename: luci-app-chinadns_1.3.6-1_all.ipk
+Size: 2264
+MD5Sum: b7729b212c18259bde80bb4a0c5209c5
+SHA256sum: 424017d355469088e67abe78493bad2f56b43b1805c57b644dcf34142f422542
+Description:  LuCI Support for ChinaDNS.
+
+Package: luci-app-radius
+Version: 0.1-1
+Depends: libc, freeradius2-democerts, freeradius2-mod-eap-mschapv2, freeradius2-mod-eap-peap, freeradius2-mod-eap-tls, freeradius2-mod-files
+Source: /home/jason/openwrtpkg/sources/luci-app-radius
+License: GPLv2
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jason Tse <jasontsecode@gmail.com>
+Architecture: all
+Installed-Size: 1520
+Filename: luci-app-radius_0.1-1_all.ipk
+Size: 2279
+MD5Sum: 013375061e8caa2ffbf812510a6e26b6
+SHA256sum: 8da336fa54133e9417e5861c82bc7cc1bed26d8488828de0680f548d6816209f
+Description:  Radius Server Management
+
+Package: luci-app-redsocks2
+Version: 1.3.6-1
+Depends: libc
+Source: /home/jason/openwrtpkg/sources/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: aa65535 <aa65535@live.com>
+Architecture: all
+Installed-Size: 1460
+Filename: luci-app-redsocks2_1.3.6-1_all.ipk
+Size: 2203
+MD5Sum: 63115f467a08fa8844c0c4ff0c0f5177
+SHA256sum: 6a0fdd142221755625df848e28fdf80ca3624751a0af0048a2f7d7753ba7a2fd
+Description:  LuCI Support for RedSocks2.
+
+Package: luci-proto-n2n
+Version: 1.0-6
+Depends: libc, n2n-edge
+Source: /home/jason/openwrtpkg/sources/luci-proto-n2n
+License: GPLv3
+LicenseFiles: LICENSE
+Section: LuCI
+Maintainer: Jason Tse <jasontsecode@gmail.com>
+Architecture: all
+Installed-Size: 1812
+Filename: luci-proto-n2n_1.0-6_all.ipk
+Size: 2403
+MD5Sum: 22f6812d7ac3b4372044539f219fd94f
+SHA256sum: c072bbfb3dc707b4b56e6c5b9b004fb42f9fcdb038ec0d1289332c8612405d2b
+Description:  N2N VPN protocol support for LuCI
+
+Package: luci-proto-shadowvpn
+Version: 1.0-2
+Depends: libc, shadowvpn
+Source: /home/jason/openwrtpkg/sources/luci-proto-shadowvpn
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jason Tse <jasontsecode@gmail.com>
+Architecture: all
+Installed-Size: 986
+Filename: luci-proto-shadowvpn_1.0-2_all.ipk
+Size: 1607
+MD5Sum: 18056b6c742a1357093cc14b5cf5672c
+SHA256sum: b51a5ff1ce3dc8c02e214e615d162489e8fed4e1724c52bd8fa0d6b1ad19528a
+Description:  ShadowVPN protocol support for LuCI
 
 Package: n2n-edge
 Version: 2.1_svn9343-1
 Depends: libc, kmod-tun, resolveip
-Source: /home/jason/openwrt-n2n
+Source: /home/jason/openwrtpkg/sources/openwrt-n2n
 License: GPLv3
 LicenseFiles: LICENSE
 Section: net
 Architecture: brcm47xx
-Installed-Size: 24093
+Installed-Size: 24139
 Filename: n2n-edge_2.1_svn9343-1_brcm47xx.ipk
-Size: 24656
-MD5Sum: 50df9e3e458d1ee6f116a17a43613494
-SHA256sum: a2c28547f0eac6fdfda6240c95fb8d8c4831d874bbdeaa650d12268be0b716b3
+Size: 24689
+MD5Sum: b98a33fcc674a1a27c072362a6d5fb04
+SHA256sum: 85c088d72801f1667d41f530c0dc631cfd4b45613f84d9c580f8644a81ab7f61
 Description:  N2N VPN tunneling daemon(V2)
 
 Package: n2n-supernode
 Version: 2.1_svn9343-1
 Depends: libc, kmod-tun, resolveip
-Source: /home/jason/openwrt-n2n
+Source: /home/jason/openwrtpkg/sources/openwrt-n2n
 License: GPLv3
 LicenseFiles: LICENSE
 Section: net
 Architecture: brcm47xx
-Installed-Size: 7714
+Installed-Size: 7716
 Filename: n2n-supernode_2.1_svn9343-1_brcm47xx.ipk
-Size: 8374
-MD5Sum: 7a0259f5ab97aaaf8ca1ed545891afd0
-SHA256sum: e05dc861c5e7670d440f3b5dfe66855af71ed25b6f53cbcf182275b51f1db2ae
+Size: 8383
+MD5Sum: 12934f5692d4b6095dd82e809d3b0a01
+SHA256sum: 292b92edbda2f024293c6f62bfcaf7c36b66e595891b9c5813d224148ccb50c2
 Description:  N2N VPN tunneling daemon(V2)
+
+Package: redsocks2
+Version: 0.60-2
+Depends: libc, libevent2
+Source: /home/jason/openwrtpkg/sources/openwrt-redsocks2
+License: GPLv2
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Zhuofei Wang <SemigodKing@gmail.com>
+Architecture: brcm47xx
+Installed-Size: 44140
+Filename: redsocks2_0.60-2_brcm47xx.ipk
+Size: 44979
+MD5Sum: a57f856d99e38f50c37120b95ac8e4c0
+SHA256sum: ff1e9292e510e5fd7b70367a9bc65cd75e4218d7acd32eaed479c9a9bbe4ab8f
+Description:  This is a modified version of original redsocks. The name is changed to be REDSOCKS2 since this release to distinguish with original redsocks. This variant is useful for anti-GFW (Great Fire Wall).
+
+Package: shadowsocks-libev-polarssl
+Version: 2.4.1-1
+Depends: libc, libpolarssl, libpthread
+Source: /home/jason/openwrtpkg/sources/openwrt-shadowsocks
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Architecture: brcm47xx
+Installed-Size: 172542
+Filename: shadowsocks-libev-polarssl_2.4.1-1_brcm47xx.ipk
+Size: 172700
+MD5Sum: 1e6dff1fbf61d0074336923e9d5387a2
+SHA256sum: accc22f1b8b07158a06131d01fdb5177ddb8f9e72c7706eab4df4c8640c07483
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: shadowsocks-libev
+Version: 2.4.1-1
+Depends: libc, libopenssl, libpthread
+Source: /home/jason/openwrtpkg/sources/openwrt-shadowsocks
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Architecture: brcm47xx
+Installed-Size: 170786
+Filename: shadowsocks-libev_2.4.1-1_brcm47xx.ipk
+Size: 170543
+MD5Sum: e11356d9a8a450f0fb85a390121dca5c
+SHA256sum: 7c34b93e7346ac71c1e40b767fef1cf7b47d641d4094003e1ce1aefd40721516
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: shadowvpn
+Version: 0.2.0-1
+Depends: libc, kmod-tun, resolveip
+Source: /home/jason/openwrtpkg/sources/openwrt-shadowvpn
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: clowwindy <clowwindy42@gmail.com>
+Architecture: brcm47xx
+Installed-Size: 45555
+Filename: shadowvpn_0.2.0-1_brcm47xx.ipk
+Size: 45749
+MD5Sum: ec735733931312be4b79380a3cb5ebc8
+SHA256sum: 83ea6e945883dfa378d0a383779256c6b092aaa4094a9f4895b9957f6cf63b64
+Description:  A fast, safe VPN based on libsodium
+ with native interface protocol support
 

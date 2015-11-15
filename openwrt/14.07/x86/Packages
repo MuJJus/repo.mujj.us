@@ -1,33 +1,32 @@
-Package: dnsmasq-dhcpv6
-Version: 2.66-3
-Depends: libc, kmod-ipv6
-Source: /home/jason/dnsmasq-openwrt
-License: GPL-2.0
+Package: ChinaDNS
+Version: 1.3.2-2
+Depends: libc
+Source: /home/jason/openwrtpkg/sources/openwrt-chinadns
+License: GPLv3
 LicenseFiles: COPYING
 Section: net
+Maintainer: clowwindy <clowwindy42@gmail.com>
 Architecture: x86
-Installed-Size: 102900
-Filename: dnsmasq-dhcpv6_2.66-3_x86.ipk
-Size: 103498
-MD5Sum: 53ad94c19c6993fa4c50d0281457ccae
-SHA256sum: 86a621e9299578f20347c7397314a592edbd446475c746a218718104d094174a
-Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
- 
- This is a variant with DHCPv6 support
+Installed-Size: 24344
+Filename: ChinaDNS_1.3.2-2_x86.ipk
+Size: 24556
+MD5Sum: 2624f476967de23d243b4a88beb220c8
+SHA256sum: 6898b736ced539052ecd858e580333acafcf98d90fcb05eeca97f9b42bc9f0ea
+Description:  A DNS forwarder that ignores incorrect(you knew it) responses.
 
 Package: dnsmasq-full
 Version: 2.66-3
 Depends: libc, kmod-ipv6, libnettle
-Source: /home/jason/dnsmasq-openwrt
+Source: /home/jason/openwrtpkg/sources/dnsmasq-openwrt
 License: GPL-2.0
 LicenseFiles: COPYING
 Section: net
 Architecture: x86
-Installed-Size: 107176
+Installed-Size: 107169
 Filename: dnsmasq-full_2.66-3_x86.ipk
-Size: 107743
-MD5Sum: 8f5b55d5883a9ecbc79d2dd0f63b8dad
-SHA256sum: ded3ea745e67d66b36aa5150af1870c1ba2ff49df2f82ab67db978d530b4d942
+Size: 107744
+MD5Sum: e1f93fbaeb159cc1fbe9b7baed22ea21
+SHA256sum: 6ae4fe01dd58b15a821aaef8492dfc8e3699a0ced815f68cc471c8bb0da36f7b
 Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
  
  This is a variant with DHCPv6, DNSSEC, Authroitative DNS and IPSET support
@@ -35,77 +34,222 @@ Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
 Package: dnsmasq
 Version: 2.66-3
 Depends: libc
-Source: /home/jason/dnsmasq-openwrt
+Source: /home/jason/openwrtpkg/sources/dnsmasq-openwrt
 License: GPL-2.0
 LicenseFiles: COPYING
 Section: net
 Architecture: x86
-Installed-Size: 85863
+Installed-Size: 85855
 Filename: dnsmasq_2.66-3_x86.ipk
-Size: 86346
-MD5Sum: e1232c00ec71a8e61300e667e798ff4e
-SHA256sum: e0292ed6cbbd647ac34525bfe24100e37049eda1763d2522f44afd535f4654fb
+Size: 86350
+MD5Sum: 9224b17595a902acd3f3af3da5186658
+SHA256sum: c3763f8679aaf9ba866c14ade6a3bde334547e4f36bc9982baad97bacee10577
 Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
 
 Package: doghole
 Version: 0.3-1
 Depends: libc, dnsmasq-full, ip, ipset, iptables, iptables-mod-ipopt, shadowvpn, luci-proto-shadowvpn, luci-app-commands, ChinaDNS, luci-app-chinadns
-Source: /home/jason/doghole
+Source: /home/jason/openwrtpkg/sources/doghole
 License: GPLv3
 LicenseFiles: LICENSE
 Section: net
 Maintainer: Jason Tse <jasontsecode@gmail.com>
 Architecture: all
-Installed-Size: 48597
+Installed-Size: 48421
 Filename: doghole_0.3-1_all.ipk
-Size: 49824
-MD5Sum: 97ff96552249bd0fc5a1432515d942f9
-SHA256sum: d1d99018b29bd1fa8502f1d82f5b7b899177e66a40b007924d6c53a80bffc163
+Size: 49664
+MD5Sum: d1988ad15649fa5f221c57d8e2cb8b15
+SHA256sum: 50ad1ce674801f19054177b27bc772bacc1695ea74a90c7a6b32f22c52e74553
 Description:  Science networking solution based on ShadowVPN
 
 Package: kmod-fs-exfat
 Version: 3.10.49+git-20150828-1
 Depends: kernel, kmod-nls-base
-Source: /home/jason/packages/kernel/exfat-nofuse
+Source: /home/jason/openwrtpkg/sources/packages/kernel/exfat-nofuse
 License: GPL-2.0
 LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Bruno Randolf <br1@einfach.org>
 Architecture: x86
-Installed-Size: 41574
+Installed-Size: 41593
 Filename: kmod-fs-exfat_3.10.49+git-20150828-1_x86.ipk
-Size: 42364
-MD5Sum: 3d46d46a64b2247803da65c5f566ba97
-SHA256sum: bb54a1459744f36a0a2af463e51a35a477974ae4b575dfad45708ff320a55173
+Size: 42353
+MD5Sum: 7506ec17745f6ef238d29683364acc71
+SHA256sum: e5cfca925b3d3acba1c7a5acbb53637913e14170b92c346a7071ffb224a07a94
 Description:  Kernel module for ExFAT Filesytems
+
+Package: luci-app-chinadns
+Version: 1.3.6-1
+Depends: libc
+Source: /home/jason/openwrtpkg/sources/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: aa65535 <aa65535@live.com>
+Architecture: all
+Installed-Size: 1518
+Filename: luci-app-chinadns_1.3.6-1_all.ipk
+Size: 2264
+MD5Sum: f9bc939806ed7cc2ec7061f031f18982
+SHA256sum: f99f351a932ca136647e03157971332889888fd0b44e54193527e5185117b1f3
+Description:  LuCI Support for ChinaDNS.
+
+Package: luci-app-radius
+Version: 0.1-1
+Depends: libc, freeradius2-democerts, freeradius2-mod-eap-mschapv2, freeradius2-mod-eap-peap, freeradius2-mod-eap-tls, freeradius2-mod-files
+Source: /home/jason/openwrtpkg/sources/luci-app-radius
+License: GPLv2
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jason Tse <jasontsecode@gmail.com>
+Architecture: all
+Installed-Size: 1519
+Filename: luci-app-radius_0.1-1_all.ipk
+Size: 2279
+MD5Sum: ea65bbdcc1b6b11339871f1870f2e5e0
+SHA256sum: f5f7137704bea7e04cfe13a7da265131be36322cac2500b2bc5a726e7f60fea3
+Description:  Radius Server Management
+
+Package: luci-app-redsocks2
+Version: 1.3.6-1
+Depends: libc
+Source: /home/jason/openwrtpkg/sources/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: aa65535 <aa65535@live.com>
+Architecture: all
+Installed-Size: 1462
+Filename: luci-app-redsocks2_1.3.6-1_all.ipk
+Size: 2204
+MD5Sum: d6d27c7e1809fccb62b66138655edfa9
+SHA256sum: e2ec3536c208a384736a89dfb77a29b1e99773f89c34a337e70215d190809e20
+Description:  LuCI Support for RedSocks2.
+
+Package: luci-proto-n2n
+Version: 1.0-6
+Depends: libc, n2n-edge
+Source: /home/jason/openwrtpkg/sources/luci-proto-n2n
+License: GPLv3
+LicenseFiles: LICENSE
+Section: LuCI
+Maintainer: Jason Tse <jasontsecode@gmail.com>
+Architecture: all
+Installed-Size: 1814
+Filename: luci-proto-n2n_1.0-6_all.ipk
+Size: 2398
+MD5Sum: 67170e57634ac7078fac9f20f6bf6527
+SHA256sum: d10a5cad17767e2bc86f95d26d35144b48467669429851d25de889f9f1cc89b2
+Description:  N2N VPN protocol support for LuCI
+
+Package: luci-proto-shadowvpn
+Version: 1.0-2
+Depends: libc, shadowvpn
+Source: /home/jason/openwrtpkg/sources/luci-proto-shadowvpn
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jason Tse <jasontsecode@gmail.com>
+Architecture: all
+Installed-Size: 986
+Filename: luci-proto-shadowvpn_1.0-2_all.ipk
+Size: 1607
+MD5Sum: 002936245f5a00333889d782d1476593
+SHA256sum: 8bcd0dd4085d8f741a29e650eae5d802f6f5934a415155cfdba4cd51d7cbf9fe
+Description:  ShadowVPN protocol support for LuCI
 
 Package: n2n-edge
 Version: 2.1_svn9343-1
 Depends: libc, kmod-tun, resolveip
-Source: /home/jason/openwrt-n2n
+Source: /home/jason/openwrtpkg/sources/openwrt-n2n
 License: GPLv3
 LicenseFiles: LICENSE
 Section: net
 Architecture: x86
-Installed-Size: 26886
+Installed-Size: 26896
 Filename: n2n-edge_2.1_svn9343-1_x86.ipk
-Size: 27402
-MD5Sum: 1e99e841cd8d0b088e895affba87ede8
-SHA256sum: 0beec4af407dded893ae81d603918db453555b30e6b6bfabe14f8ea9c3329958
+Size: 27450
+MD5Sum: 1678cf7996a6a3f651e04d344fcd860c
+SHA256sum: 29a11bfa405b62deec1024a910214077cecf622a1138069fcec64d05add161d1
 Description:  N2N VPN tunneling daemon(V2)
 
 Package: n2n-supernode
 Version: 2.1_svn9343-1
 Depends: libc, kmod-tun, resolveip
-Source: /home/jason/openwrt-n2n
+Source: /home/jason/openwrtpkg/sources/openwrt-n2n
 License: GPLv3
 LicenseFiles: LICENSE
 Section: net
 Architecture: x86
-Installed-Size: 8642
+Installed-Size: 8638
 Filename: n2n-supernode_2.1_svn9343-1_x86.ipk
-Size: 9254
-MD5Sum: ed2d7640a96cb44d4fb96910fa0fe6e8
-SHA256sum: 4499e3feaf26ad81304aae452566531150bdfe4a7d3220c14b5d8785b53e0931
+Size: 9227
+MD5Sum: 27f46585b3b5f9c973d9c8ce977f2a62
+SHA256sum: 3cdf9a3c52e63890be6e400b0ca0d32db10226ade6d3a0b67b78ff1a1a03524b
 Description:  N2N VPN tunneling daemon(V2)
+
+Package: redsocks2
+Version: 0.60-2
+Depends: libc, libevent2
+Source: /home/jason/openwrtpkg/sources/openwrt-redsocks2
+License: GPLv2
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Zhuofei Wang <SemigodKing@gmail.com>
+Architecture: x86
+Installed-Size: 46425
+Filename: redsocks2_0.60-2_x86.ipk
+Size: 47136
+MD5Sum: 9794d3aec9445be7f07b587eeb9b97b6
+SHA256sum: 43e7c8ef6fcefa687c8927a7b3b4f1963342ff21284698f3b1272cbeb2cc32c4
+Description:  This is a modified version of original redsocks. The name is changed to be REDSOCKS2 since this release to distinguish with original redsocks. This variant is useful for anti-GFW (Great Fire Wall).
+
+Package: shadowsocks-libev-polarssl
+Version: 2.4.1-1
+Depends: libc, libpolarssl, libpthread
+Source: /home/jason/openwrtpkg/sources/openwrt-shadowsocks
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Architecture: x86
+Installed-Size: 177694
+Filename: shadowsocks-libev-polarssl_2.4.1-1_x86.ipk
+Size: 177987
+MD5Sum: 1ad77d40459349dd564a0b01e3c175d2
+SHA256sum: 36cad60782ea47a78b20ca3783e783adfb44dba77aa1dc9f409ead95b011cd92
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: shadowsocks-libev
+Version: 2.4.1-1
+Depends: libc, libopenssl, libpthread
+Source: /home/jason/openwrtpkg/sources/openwrt-shadowsocks
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Architecture: x86
+Installed-Size: 175997
+Filename: shadowsocks-libev_2.4.1-1_x86.ipk
+Size: 176295
+MD5Sum: 298e1473036b7116ce0182674d17fde7
+SHA256sum: 5a0421e095edb73343048326c68e45cdeae8069e889a6fc402e21044eeec26e4
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: shadowvpn
+Version: 0.2.0-1
+Depends: libc, kmod-tun, resolveip
+Source: /home/jason/openwrtpkg/sources/openwrt-shadowvpn
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: clowwindy <clowwindy42@gmail.com>
+Architecture: x86
+Installed-Size: 31855
+Filename: shadowvpn_0.2.0-1_x86.ipk
+Size: 32252
+MD5Sum: 75e236cb5368eeaa913a6752c38f96cd
+SHA256sum: 1e605a5129d31451b0eda1b28cf6a3e5c768e7bb4df04c9309bc9fe73cabc6d4
+Description:  A fast, safe VPN based on libsodium
+ with native interface protocol support
 

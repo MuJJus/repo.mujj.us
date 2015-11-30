@@ -1,5 +1,5 @@
 Package: ChinaDNS
-Version: 1.3.2-2
+Version: 1.3.2-3
 Depends: libc
 Source: /home/jason/openwrtpkg/sources/openwrt-chinadns
 License: GPLv3
@@ -7,11 +7,11 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: clowwindy <clowwindy42@gmail.com>
 Architecture: ar71xx
-Installed-Size: 24942
-Filename: ChinaDNS_1.3.2-2_ar71xx.ipk
-Size: 25316
-MD5Sum: 166ee534f14234b40239242b29f6932f
-SHA256sum: 008577275634ef75ad8b99ff1c0613abbf890178b4864809e8306a03c024af3b
+Installed-Size: 25045
+Filename: ChinaDNS_1.3.2-3_ar71xx.ipk
+Size: 25364
+MD5Sum: 43f3645c4dda90543fdb485c2bea5bc1
+SHA256sum: 1a421bbd42786edcb16c869789c676a31cd0e8b579ed305cf43af67a0755697e
 Description:  A DNS forwarder that ignores incorrect(you knew it) responses.
 
 Package: doghole
@@ -31,7 +31,7 @@ SHA256sum: 19392e7dc901d6d222e7b169af3afd1343f21d61dee42d919425e499009815e4
 Description:  Science networking solution based on ShadowVPN
 
 Package: luci-app-chinadns
-Version: 1.3.6-1
+Version: 1.3.6-2
 Depends: libc
 Source: /home/jason/openwrtpkg/sources/openwrt-dist-luci
 License: GPLv3
@@ -39,11 +39,11 @@ LicenseFiles: LICENSE
 Section: luci
 Maintainer: aa65535 <aa65535@live.com>
 Architecture: all
-Installed-Size: 1517
-Filename: luci-app-chinadns_1.3.6-1_all.ipk
-Size: 2372
-MD5Sum: a34f1331399fae54adb00b05122da9fc
-SHA256sum: 28835788fd0b92fe1612ed985b89ccc2b81cf898fe4b39ed063f960759bb471c
+Installed-Size: 1618
+Filename: luci-app-chinadns_1.3.6-2_all.ipk
+Size: 2463
+MD5Sum: 5802f58f0a67938f079be7656f7e1b29
+SHA256sum: 35240ab587655202f42ce5dda0897aa62b40ec3c19ce28ea75e764e260f8f463
 Description:  LuCI Support for ChinaDNS.
 
 Package: luci-app-radius
@@ -63,7 +63,7 @@ SHA256sum: 2f5523bfd0b93c0c4ce350c04dddad0c8c0585494507593cf2f958eca3d0ff3e
 Description:  Radius Server Management
 
 Package: luci-app-redsocks2
-Version: 1.3.6-1
+Version: 1.3.6-2
 Depends: libc
 Source: /home/jason/openwrtpkg/sources/openwrt-dist-luci
 License: GPLv3
@@ -71,11 +71,11 @@ LicenseFiles: LICENSE
 Section: luci
 Maintainer: aa65535 <aa65535@live.com>
 Architecture: all
-Installed-Size: 1467
-Filename: luci-app-redsocks2_1.3.6-1_all.ipk
-Size: 2320
-MD5Sum: 1c842c6a875d5d8ba5763861be51a36a
-SHA256sum: 9b84ab704a85eae9a0a5a52e717229c9e01a28d1f42df16fa4ed096be9ec09ab
+Installed-Size: 1459
+Filename: luci-app-redsocks2_1.3.6-2_all.ipk
+Size: 2315
+MD5Sum: 3953516d34f4c46d3d3dadaea441383b
+SHA256sum: 5e3016c6889c1bfa49aadfcaecb21e6c6f12047bacc2facc0a709b5a411cb208
 Description:  LuCI Support for RedSocks2.
 
 Package: luci-proto-n2n
@@ -209,11 +209,11 @@ Source: /home/jason/openwrtpkg/sources/openwrt-shadowsocks
 Section: net
 Maintainer: Max Lv <max.c.lv@gmail.com>
 Architecture: ar71xx
-Installed-Size: 171111
+Installed-Size: 171100
 Filename: shadowsocks_2.4.1-1_ar71xx.ipk
-Size: 170809
-MD5Sum: ff434a4f2b49a30ae05077412e3a848f
-SHA256sum: 3f2d8763f4ec901bc299242ce525df98185b3b3f655d0721f0365c1d9223ce45
+Size: 170802
+MD5Sum: 3d24d536a9bb8e7b8fa2d1b708c1d6c7
+SHA256sum: 147b88ba0d6df72d6e4326a933dfbf5c5b10b12441cd71233535caf4e87f68b5
 Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 
 Package: shadowvpn

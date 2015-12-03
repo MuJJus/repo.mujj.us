@@ -7,12 +7,16 @@
 
 <body>
 <h1>MuJJ-Gaming Club Packages Repository</h1>
-<hr />
+<ol>
+<li>Modify <code>check_signature</code> option(if have) to <code>0</code> in <code>/etc/opkg.conf</code>.</li>
+<li>Select your version and insert packages source to the file:</li>
+</ol>
+</p>
 OpenWrt Version
 <select id="ver">
 <option value="empty">---Please select---</option>
-<option value="14.07">Breaker Barrier 14.07</option>
-<option value="15.05">Chaos Calmer 15.05</option>
+<option value="14.07">Breaker Barrier</option>
+<option value="15.05">Chaos Calmer</option>
 </select>
 Chip
 <select id="chip">
@@ -27,20 +31,20 @@ Chip
 	}
 	function changeVersion() {
 		$("chip").length = 0;
-		$("res").innerText = "";
+		$("res").value = "";
 
 		if ($("ver").value == "empty") return;
 
 		var chips = {
 			"14.07": [
-				{ "value": "ar71xx", "name": "Atheros AR71xx/72xx/93xx/QCA95xx"},
+				{ "value": "ar71xx", "name": "Atheros AR71xx/93xx"},
 				{ "value": "brcm47xx", "name": "Broadcom BCM4716/4718/4706"},
 				{ "value": "x86", "name": "x86"}
 			],
 			"15.05": [
-				{ "value": "ar71xx", "name": "Atheros AR71xx/72xx/93xx/QCA95xx"},
+				{ "value": "ar71xx", "name": "Atheros AR71xx/93xx"},
 				{ "value": "brcm47xx", "name": "Broadcom BCM4716/4718/4706"},
-				{ "value": "x86-64", "name": "x86-64"}
+				{ "value": "x86_64", "name": "x86_64"}
 			]
 		};
 		var selected = $("ver").value;
@@ -60,9 +64,9 @@ Chip
 	}
 	function buildConf() {
 		if ($("chip").value == "empty") {
-			$("res").innerText = "";
+			$("res").value = "";
 		} else {
-			$("res").innerText = "src/gz mujjus http://repo.mujj.us/openwrt/" + $("ver").value + "/" + $("chip").value;
+			$("res").value = "src/gz mujjus http://repo.mujj.us/openwrt/" + $("ver").value + "/" + $("chip").value;
 		}
 	}
 	$("ver").onchange = function() {
@@ -74,9 +78,8 @@ Chip
 })();
 </script>
 <p>
-Visit <a href="http://mujj.us/">MuJJ-Gaming Club</a>, <a href="https://github.com/MuJJus">GitHub</a>, <a href="https://github.com/MuJJus/repo.mujj.us/tree/gh-pages/openwrt/">Packages Lists</a>.
+Visit <a href="http://mujj.us/">MuJJ-Gaming Club</a>, <a href="https://github.com/MuJJus">GitHub</a>, <a href="https://github.com/MuJJus/mujjus.github.io/tree/master/openwrt/">Packages List</a>.
 </p>
 Hosted by <a href="https://pages.github.com">GitHub Pages</a>
 </body>
 </html>
-

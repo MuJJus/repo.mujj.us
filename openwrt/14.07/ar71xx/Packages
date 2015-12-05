@@ -282,3 +282,17 @@ SHA256sum: 93a5fe9fcb3b02d266f0b2300baec4ca3c71dec3ce7ee186a4efb8edd4942a6d
 Description:  A fast, safe VPN based on libsodium
  with native interface protocol support
 
+Package: tcpping
+Version: 0.2-59e94bd
+Depends: libc, libnet, libpcap
+Source: /home/jason/openwrtpkg/sources/tcpping
+Section: net
+Maintainer: Jim Wyllie <jwyllie83@gmail.com>
+Architecture: ar71xx
+Installed-Size: 34389
+Filename: tcpping_0.2-59e94bd_ar71xx.ipk
+Size: 35036
+MD5Sum: 332986fbcb6cc4c16cd1b17cae10e9d9
+SHA256sum: 86f6ab01f2fbe7161df67b5352078f8d809af8719aef356eae1b9f3886955857
+Description:  Ping look-alike that uses TCP SYN packets to get around firewalls and ICMP blackholes
+

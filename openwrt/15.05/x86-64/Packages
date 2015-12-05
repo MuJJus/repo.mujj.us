@@ -62,6 +62,21 @@ MD5Sum: 946f77891e3cf5de8fdbb5380c7dfa28
 SHA256sum: 9960f116fd09e24addab3a502de4a15f175d799295fe88fbbcc672582c9a3a20
 Description:  Science networking solution based on ShadowVPN
 
+Package: libnet-1.2.x
+Version: 1.2-rc3-3
+Depends: libc, libpcap
+Source: /home/jason/openwrtpkg/sources/packages/libs/libnet-1.2.x
+License: GPL-2.0
+Section: libs
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Architecture: x86_64
+Installed-Size: 32408
+Filename: libnet-1.2.x_1.2-rc3-3_x86_64.ipk
+Size: 33165
+MD5Sum: 99f523bdb01e0f42940fff198fdaf424
+SHA256sum: 67509df5596e2d3ff34405a6bdba66942c5dc74ae76619cc4bf7803b75989e1d
+Description:  Low-level packet creation library
+
 Package: luci-app-chinadns
 Version: 1.3.6-2
 Depends: libc
@@ -264,4 +279,18 @@ MD5Sum: fd29615f70359f5031a5606b27594dbb
 SHA256sum: 40a5cda80511bb808c2bbc83b63758f9fee5a2ce4d821e93efdcbad620dc5db0
 Description:  A fast, safe VPN based on libsodium
  with native interface protocol support
+
+Package: tcpping
+Version: 0.2-59e94bd
+Depends: libc, libnet, libpcap
+Source: /home/jason/openwrtpkg/sources/tcpping
+Section: net
+Maintainer: Jim Wyllie <jwyllie83@gmail.com>
+Architecture: x86_64
+Installed-Size: 39155
+Filename: tcpping_0.2-59e94bd_x86_64.ipk
+Size: 39934
+MD5Sum: 3d6695ea4fd7f388657ebd687c4bd764
+SHA256sum: ab5b3b536ea68f0248ec87f825bb85c25170a230acc89c90e25a38b1de92bf9d
+Description:  Ping look-alike that uses TCP SYN packets to get around firewalls and ICMP blackholes
 

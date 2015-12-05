@@ -78,6 +78,21 @@ MD5Sum: 7506ec17745f6ef238d29683364acc71
 SHA256sum: e5cfca925b3d3acba1c7a5acbb53637913e14170b92c346a7071ffb224a07a94
 Description:  Kernel module for ExFAT Filesytems
 
+Package: libnet-1.2.x
+Version: 1.2-rc3-3
+Depends: libc, libpcap
+Source: /home/jason/openwrtpkg/sources/packages/libs/libnet-1.2.x
+License: GPL-2.0
+Section: libs
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Architecture: x86
+Installed-Size: 31336
+Filename: libnet-1.2.x_1.2-rc3-3_x86.ipk
+Size: 31830
+MD5Sum: 0b76d55b2a9b4a19235ad6a60975b9a7
+SHA256sum: 6cc6f49f299b0735254ef36f33311afdee8f08864cf36f56bac05bab90b36cd8
+Description:  Low-level packet creation library
+
 Package: luci-app-chinadns
 Version: 1.3.6-2
 Depends: libc
@@ -266,4 +281,18 @@ MD5Sum: 75e236cb5368eeaa913a6752c38f96cd
 SHA256sum: 1e605a5129d31451b0eda1b28cf6a3e5c768e7bb4df04c9309bc9fe73cabc6d4
 Description:  A fast, safe VPN based on libsodium
  with native interface protocol support
+
+Package: tcpping
+Version: 0.2-59e94bd
+Depends: libc, libnet, libpcap
+Source: /home/jason/openwrtpkg/sources/tcpping
+Section: net
+Maintainer: Jim Wyllie <jwyllie83@gmail.com>
+Architecture: x86
+Installed-Size: 37613
+Filename: tcpping_0.2-59e94bd_x86.ipk
+Size: 38110
+MD5Sum: a364f4adff56c73e6ab031a134289c21
+SHA256sum: d3fd1e285a27a9115681484631ba3886612b74f95712a8623e5769f50864b9cc
+Description:  Ping look-alike that uses TCP SYN packets to get around firewalls and ICMP blackholes
 

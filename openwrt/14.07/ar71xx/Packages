@@ -78,6 +78,21 @@ MD5Sum: a3f5d6eb764394b7f13db46e4adcff16
 SHA256sum: 1d5b44e76875366882a54a24bf07d377b81f4008a67770607903706eb7bedf39
 Description:  Kernel module for ExFAT Filesytems
 
+Package: libnet-1.2.x
+Version: 1.2-rc3-3
+Depends: libc, libpcap
+Source: /home/jason/openwrtpkg/sources/packages/libs/libnet-1.2.x
+License: GPL-2.0
+Section: libs
+Maintainer: Mislav Novakovic <mislav.novakovic@sartura.hr>
+Architecture: ar71xx
+Installed-Size: 28226
+Filename: libnet-1.2.x_1.2-rc3-3_ar71xx.ipk
+Size: 28816
+MD5Sum: ccb7d5d68083d2f865814d42029b0cb8
+SHA256sum: e6bcd3ab6a1b41217df518ef46dce908bf371c70b28f96e164a9fb509c805f5e
+Description:  Low-level packet creation library
+
 Package: luci-app-chinadns
 Version: 1.3.6-2
 Depends: libc

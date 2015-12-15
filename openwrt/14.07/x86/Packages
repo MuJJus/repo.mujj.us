@@ -252,17 +252,17 @@ SHA256sum: 5a0421e095edb73343048326c68e45cdeae8069e889a6fc402e21044eeec26e4
 Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 
 Package: shadowsocks
-Version: 2.4.1-1
+Version: 2.4.2-1
 Depends: libc, libopenssl, libpthread
 Source: /home/jason/openwrtpkg/sources/openwrt-shadowsocks
 Section: net
 Maintainer: Max Lv <max.c.lv@gmail.com>
 Architecture: x86
-Installed-Size: 178010
-Filename: shadowsocks_2.4.1-1_x86.ipk
-Size: 178511
-MD5Sum: 7b39aa4071eed10fa92a6496276de4fb
-SHA256sum: 47f7d875de556e0a13eb9bf4559cf2866fb37836b33fc91677d3f5f0520a2808
+Installed-Size: 167864
+Filename: shadowsocks_2.4.2-1_x86.ipk
+Size: 168317
+MD5Sum: d5ebd3c32d08287734b3da292671620c
+SHA256sum: 26f9ca3f1a120a07cd36d56d70bc8b3912f3e99450746f5dc1ded9402c330a50
 Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 
 Package: shadowvpn

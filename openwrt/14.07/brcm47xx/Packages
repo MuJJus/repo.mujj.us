@@ -14,6 +14,23 @@ MD5Sum: 2dbf688dcf34d25684ad809f7652d32b
 SHA256sum: 3219b67ae02e7e854dce11bc465788cea92eb4d18fe1230faaa1272956dcc596
 Description:  A DNS forwarder that ignores incorrect(you knew it) responses.
 
+Package: aria2-full
+Version: 1.18.7-1
+Depends: libc, zlib, libxml2, libstdcpp, libopenssl
+Source: /home/jason/openwrtpkg/sources/packages/net/aria2
+License: GPLv2
+LicenseFiles: COPYING
+Section: net
+Maintainer: Imre Kaloz <kaloz@openwrt.org>
+Architecture: brcm47xx
+Installed-Size: 904029
+Filename: aria2-full_1.18.7-1_brcm47xx.ipk
+Size: 902936
+MD5Sum: 9e01e5d8d0a139080445f18da12c7ee0
+SHA256sum: db0185b4e50523a0f9c71dcd7926693e5c6d37017127f66b2ab3f3611bf88db0
+Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
+ utility
+
 Package: dnsmasq-full
 Version: 2.66-3
 Depends: libc, kmod-ipv6, libnettle
@@ -92,6 +109,22 @@ Size: 30441
 MD5Sum: 2183afbef83b16c07ec40fe0aa0ba815
 SHA256sum: aca5e6c14db37c493b5f40724311a9976c4d6f95f46ece7834b80d73e1a87b02
 Description:  Low-level packet creation library
+
+Package: libxml2
+Version: 2.9.3-1
+Depends: libc, libpthread, zlib
+Source: /home/jason/openwrtpkg/sources/packages/libs/libxml2
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: brcm47xx
+Installed-Size: 442692
+Filename: libxml2_2.9.3-1_brcm47xx.ipk
+Size: 441079
+MD5Sum: 12f38d1d2404155a86a2048699c0fada
+SHA256sum: a084771f4cae395c908071ab11dda987b7c9afb5a21c9427686afc929c887132
+Description:  A library for manipulating XML and HTML resources.
 
 Package: luci-app-chinadns
 Version: 1.3.6-2
@@ -258,11 +291,11 @@ Source: /home/jason/openwrtpkg/sources/openwrt-shadowsocks
 Section: net
 Maintainer: Max Lv <max.c.lv@gmail.com>
 Architecture: brcm47xx
-Installed-Size: 219075
+Installed-Size: 219067
 Filename: shadowsocks_2.4.3-1_brcm47xx.ipk
 Size: 219583
-MD5Sum: 02da7e5aad2136381761ac09622a171d
-SHA256sum: 55c56f774283351a3f28b4d072b98510588e3dd845ff2741958f2a357708a21d
+MD5Sum: 82699f06acd49ddc04969b2b07e30fbd
+SHA256sum: 2674275c71761d40341d758ade7e42c86995ea16e0727c24b851b3fe82012e8c
 Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 
 Package: shadowvpn

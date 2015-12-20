@@ -95,6 +95,19 @@ MD5Sum: a3f5d6eb764394b7f13db46e4adcff16
 SHA256sum: 1d5b44e76875366882a54a24bf07d377b81f4008a67770607903706eb7bedf39
 Description:  Kernel module for ExFAT Filesytems
 
+Package: kmod-ufsd-ar71xx-3.10
+Version: 3.10.49+1-1
+Depends: kernel, kmod-nls-base, kmod-nls-utf8
+Source: /home/jason/openwrtpkg/sources/ufsd-mipseb-3.10
+Section: kernel
+Architecture: ar71xx
+Installed-Size: 248790
+Filename: kmod-ufsd-ar71xx-3.10_3.10.49+1-1_ar71xx.ipk
+Size: 247934
+MD5Sum: a7abd1e7cf69481f953db5d6e1879e21
+SHA256sum: 0cfab87007583fbffb6f945b225c19d5b4cf6571955f061c7f0c500f7f3b5c49
+Description:  Paragon ufsd is a fs driverof ntfs
+
 Package: libnet-1.2.x
 Version: 1.2-rc3-3
 Depends: libc, libpcap
@@ -328,4 +341,30 @@ Size: 7301
 MD5Sum: c4d6d87bdfe761e227bf9dd9952edaa4
 SHA256sum: 7a75a0491d639241b5442cc27ab7f11a32ac18473df38fd99126633eb1d7e019
 Description:  Ping look-alike that uses TCP SYN packets to get around firewalls and ICMP blackholes
+
+Package: ufsd-chkntfs
+Version: 8.9.0-1
+Depends: libc, kmod-ufsd
+Source: /home/jason/openwrtpkg/sources/openwrt-maz1/ufsd-chkntfs-mipseb
+Section: utils
+Architecture: ar71xx
+Installed-Size: 253060
+Filename: ufsd-chkntfs_8.9.0-1_ar71xx.ipk
+Size: 253368
+MD5Sum: bad592388125a8adb858920005de93f5
+SHA256sum: 17c2cb5dfe109337d2e59cbe47a8a5da2427588743755381055af64b3f254eb8
+Description:  chkntfs from paragon ufsd
+
+Package: ufsd-mkntfs
+Version: 8.9.0-1
+Depends: libc, kmod-ufsd
+Source: /home/jason/openwrtpkg/sources/openwrt-maz1/ufsd-mkntfs-mipseb
+Section: utils
+Architecture: ar71xx
+Installed-Size: 196036
+Filename: ufsd-mkntfs_8.9.0-1_ar71xx.ipk
+Size: 196440
+MD5Sum: 97e23ddbb84bb2387ad546e5039f3c39
+SHA256sum: 1ba3cfc92d1a3e999df9a30d6408dc130e69bfaf1ae81a06bccf6ee7944cba78
+Description:  mkntfs from paragon ufsd
 

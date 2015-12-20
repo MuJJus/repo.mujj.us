@@ -47,6 +47,19 @@ MD5Sum: 3caf9f562385a4523395bd8a06bbae12
 SHA256sum: 19392e7dc901d6d222e7b169af3afd1343f21d61dee42d919425e499009815e4
 Description:  Science networking solution based on ShadowVPN
 
+Package: kmod-ufsd-mipseb-3.18
+Version: 3.18.20+1-1
+Depends: kernel, kmod-nls-base, kmod-nls-utf8
+Source: /home/jason/openwrtpkg/sources/openwrt-maz1/ufsd-mipseb-3.18
+Section: kernel
+Architecture: ar71xx
+Installed-Size: 195247
+Filename: kmod-ufsd-mipseb-3.18_3.18.20+1-1_ar71xx.ipk
+Size: 194955
+MD5Sum: 471bd34cd112917dbfa736e22aa33d3e
+SHA256sum: 7db139934d3ecff089c199f146c031128171db5326e9ca3a1b29a82525b06073
+Description:  Paragon ufsd is a fs driverof ntfs
+
 Package: libnet-1.2.x
 Version: 1.2-rc3-3
 Depends: libc, libpcap
@@ -294,4 +307,30 @@ Size: 7400
 MD5Sum: cbf6ee28f5d5a1e5279f3db7abe78687
 SHA256sum: ec87e64d248bd821bc4334509358d4dde6c7fc8025919f2b9fd314e58d76a5a8
 Description:  Ping look-alike that uses TCP SYN packets to get around firewalls and ICMP blackholes
+
+Package: ufsd-chkntfs
+Version: 8.9.0-1
+Depends: libc, kmod-ufsd
+Source: /home/jason/openwrtpkg/sources/openwrt-maz1/ufsd-chkntfs-mipseb
+Section: utils
+Architecture: ar71xx
+Installed-Size: 253064
+Filename: ufsd-chkntfs_8.9.0-1_ar71xx.ipk
+Size: 253541
+MD5Sum: ea2e064a9b53c987d2d609e3eaa4c108
+SHA256sum: e4c42584b7d048105f8436b332977cba58e1c2dbd2864f0c2109b2d68689aa4c
+Description:  chkntfs from paragon ufsd
+
+Package: ufsd-mkntfs
+Version: 8.9.0-1
+Depends: libc, kmod-ufsd
+Source: /home/jason/openwrtpkg/sources/openwrt-maz1/ufsd-mkntfs-mipseb
+Section: utils
+Architecture: ar71xx
+Installed-Size: 196036
+Filename: ufsd-mkntfs_8.9.0-1_ar71xx.ipk
+Size: 196592
+MD5Sum: 81b15dda32266a4cf4119f865dbfb794
+SHA256sum: cde47fbad230582d54c63304a320eef2528c46348d553ec23964475899cc0b53
+Description:  mkntfs from paragon ufsd
 

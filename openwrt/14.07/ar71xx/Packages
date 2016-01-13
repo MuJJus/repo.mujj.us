@@ -14,20 +14,54 @@ MD5Sum: 6bf79336d3037157aaca5151f1124164
 SHA256sum: 3faec9a1b4e245af2585235eebf94e1735771db289765f24127e55e4657815b8
 Description:  A DNS forwarder that ignores incorrect(you knew it) responses.
 
-Package: aria2-full
-Version: 1.18.7-1
+Package: aria2-bt
+Version: 1.19.3-1
 Depends: libc, zlib, libxml2, libstdcpp, libopenssl
-Source: /home/jason/openwrtpkg/sources/packages/net/aria2
+Source: /home/jason/openwrtpkg/sources/aria2
 License: GPLv2
 LicenseFiles: COPYING
 Section: net
-Maintainer: Imre Kaloz <kaloz@openwrt.org>
+Maintainer: Jason Tse <jason@mujj.us>
 Architecture: ar71xx
-Installed-Size: 926609
-Filename: aria2-full_1.18.7-1_ar71xx.ipk
-Size: 924624
-MD5Sum: f5b46eb738e5432c92942760cc31bddc
-SHA256sum: 8e7b32011a5bddb7afa56d70f1bcf44f208cf08e0dea50d441387c3c8f785520
+Installed-Size: 934444
+Filename: aria2-bt_1.19.3-1_ar71xx.ipk
+Size: 932623
+MD5Sum: c76750fa4c1f996b34e238488a45d79f
+SHA256sum: 479c016359e0973e7d4bf9e05bcceaa32880f48b7b61132670d792a4837e324c
+Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
+ utility
+
+Package: aria2-full
+Version: 1.19.3-1
+Depends: libc, zlib, libxml2, libstdcpp, libopenssl, libssh2, libsqlite3
+Source: /home/jason/openwrtpkg/sources/aria2
+License: GPLv2
+LicenseFiles: COPYING
+Section: net
+Maintainer: Jason Tse <jason@mujj.us>
+Architecture: ar71xx
+Installed-Size: 946322
+Filename: aria2-full_1.19.3-1_ar71xx.ipk
+Size: 944003
+MD5Sum: 6ead7c31d56c756b871a860498bf3ecc
+SHA256sum: 06ab3e5bac09f1aae5b86d8fc948d304db72707d5b1b752d1e0b71dcd0874f41
+Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
+ utility
+
+Package: aria2
+Version: 1.19.3-1
+Depends: libc, zlib, libxml2, libstdcpp, libopenssl
+Source: /home/jason/openwrtpkg/sources/aria2
+License: GPLv2
+LicenseFiles: COPYING
+Section: net
+Maintainer: Jason Tse <jason@mujj.us>
+Architecture: ar71xx
+Installed-Size: 629926
+Filename: aria2_1.19.3-1_ar71xx.ipk
+Size: 628891
+MD5Sum: 3395f35a852901a478a6307a18515d48
+SHA256sum: f55fc1026939833513fa603d9f586dd392b6d6ba8048809feb18653d9e8763fd
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
@@ -123,6 +157,40 @@ MD5Sum: ccb7d5d68083d2f865814d42029b0cb8
 SHA256sum: e6bcd3ab6a1b41217df518ef46dce908bf371c70b28f96e164a9fb509c805f5e
 Description:  Low-level packet creation library
 
+Package: libsqlite3
+Version: 3081101-1
+Depends: libc, libpthread
+Source: /home/jason/openwrtpkg/sources/packages/libs/sqlite3
+License: PUBLICDOMAIN
+Section: libs
+Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
+Architecture: ar71xx
+Installed-Size: 342618
+Filename: libsqlite3_3081101-1_ar71xx.ipk
+Size: 342871
+MD5Sum: 6303022e9f725827a47ddad200663130
+SHA256sum: 2ce69f8e9488bc4769f1012b6e3d73d5ad6158ec54a3d34dd7df0100f046b60c
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains the SQLite (v3.x) shared library, used by other
+ programs.
+
+Package: libssh2
+Version: 1.6.0-1
+Depends: libc, libopenssl, zlib
+Source: /home/jason/openwrtpkg/sources/packages/libs/libssh2
+License: BSD
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Jiri Slachta <slachta@cesnet.cz>
+Architecture: ar71xx
+Installed-Size: 58363
+Filename: libssh2_1.6.0-1_ar71xx.ipk
+Size: 59112
+MD5Sum: 45a4a4f91cb68f3eec85216a1ee00848
+SHA256sum: d21fe3dcab9e9291e09ed968bdf128eb9bae12436e3f653321d58e9df2596261
+Description:  libssh2 is a client-side C library implementing the SSH2 protocol.
+
 Package: libxml2
 Version: 2.9.3-1
 Depends: libc, libpthread, zlib
@@ -134,9 +202,9 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ar71xx
 Installed-Size: 445103
 Filename: libxml2_2.9.3-1_ar71xx.ipk
-Size: 442442
-MD5Sum: 0458031e1cb0ac6ec5f9e6432b752c91
-SHA256sum: 5151140880f295e3ae774d86048e26be0b162feaa22b9beffbf4d7c09ae61160
+Size: 442471
+MD5Sum: 792f94b9ddfaecfa5655056e6251c39b
+SHA256sum: de81f19199b302202f167077da9aa2f5bc27e4469bcde7fb8384a1bbe7811c49
 Description:  A library for manipulating XML and HTML resources.
 
 Package: luci-app-chinadns
@@ -298,17 +366,17 @@ SHA256sum: c229e32821f04cbd5ece3e9e699bba7751140b15dfbe3a9bf6cfd918a12b7504
 Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 
 Package: shadowsocks
-Version: 2.4.3-1
+Version: 2.4.4-1
 Depends: libc, libopenssl, libpthread
 Source: /home/jason/openwrtpkg/sources/openwrt-shadowsocks
 Section: net
 Maintainer: Max Lv <max.c.lv@gmail.com>
 Architecture: ar71xx
-Installed-Size: 216479
-Filename: shadowsocks_2.4.3-1_ar71xx.ipk
-Size: 215731
-MD5Sum: 8f48b2c5a2ba8b203b869135685ca893
-SHA256sum: f71b9907e8b221db7f28df6ecbbd66874b83c9b73ed41b4ec33d9d98f15ca6f4
+Installed-Size: 216917
+Filename: shadowsocks_2.4.4-1_ar71xx.ipk
+Size: 216172
+MD5Sum: 914850bef747d1f5c2e742a5c2042383
+SHA256sum: b3132529623a737b14432654f11698f50c8e358d0ebbf11d4a2feb469af9c31c
 Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 
 Package: shadowvpn

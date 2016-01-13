@@ -14,20 +14,54 @@ MD5Sum: c4ee448881898141927b89ff014cb928
 SHA256sum: 64349dcd58d0bc5105909c4e30288c8081a8a8c77aad6539d64e1be81aa1dabe
 Description:  A DNS forwarder that ignores incorrect(you knew it) responses.
 
-Package: aria2-full
-Version: 1.18.7-1
-Depends: libc, zlib, libstdcpp, libopenssl
-Source: /home/jason/openwrtpkg/sources/packages/net/aria2
+Package: aria2-bt
+Version: 1.19.3-1
+Depends: libc, zlib, libxml2, libstdcpp, libopenssl
+Source: /home/jason/openwrtpkg/sources/aria2
 License: GPLv2
 LicenseFiles: COPYING
 Section: net
-Maintainer: Imre Kaloz <kaloz@openwrt.org>
+Maintainer: Jason Tse <jason@mujj.us>
 Architecture: x86
-Installed-Size: 513810
-Filename: aria2-full_1.18.7-1_x86.ipk
-Size: 512978
-MD5Sum: e3c06d4fef247944f0ddfc6f5bb1281a
-SHA256sum: 3a8e2c03e7a9f27268a4d265955e41985fdd1e37e496290823ac70dd385da4d2
+Installed-Size: 839664
+Filename: aria2-bt_1.19.3-1_x86.ipk
+Size: 838131
+MD5Sum: b5a8ed783d04411ce7a97e5dc6a6dce0
+SHA256sum: e14d3cacbb1633df7d31014c432309ffe439afc1c759d95a8c6b00ea2bdbefcc
+Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
+ utility
+
+Package: aria2-full
+Version: 1.19.3-1
+Depends: libc, zlib, libxml2, libstdcpp, libopenssl, libssh2, libsqlite3
+Source: /home/jason/openwrtpkg/sources/aria2
+License: GPLv2
+LicenseFiles: COPYING
+Section: net
+Maintainer: Jason Tse <jason@mujj.us>
+Architecture: x86
+Installed-Size: 851612
+Filename: aria2-full_1.19.3-1_x86.ipk
+Size: 850359
+MD5Sum: 3f238400bcf67cf1bd8ec54b205c156a
+SHA256sum: f175fcd5d6f0cc017e368f5ded8e2926e0e09f85c0ec7fbb46a8bb8a56f6db4f
+Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
+ utility
+
+Package: aria2
+Version: 1.19.3-1
+Depends: libc, zlib, libxml2, libstdcpp, libopenssl
+Source: /home/jason/openwrtpkg/sources/aria2
+License: GPLv2
+LicenseFiles: COPYING
+Section: net
+Maintainer: Jason Tse <jason@mujj.us>
+Architecture: x86
+Installed-Size: 567541
+Filename: aria2_1.19.3-1_x86.ipk
+Size: 566797
+MD5Sum: 3ff96148d8e702aba8bd8da7aa5bf941
+SHA256sum: 7fcaca2f82d0408e9462f4b7b52d264bdf49de559e95ef4f7414a7124fc713cb
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
@@ -109,6 +143,40 @@ Size: 31830
 MD5Sum: 0b76d55b2a9b4a19235ad6a60975b9a7
 SHA256sum: 6cc6f49f299b0735254ef36f33311afdee8f08864cf36f56bac05bab90b36cd8
 Description:  Low-level packet creation library
+
+Package: libsqlite3
+Version: 3081101-1
+Depends: libc, libpthread
+Source: /home/jason/openwrtpkg/sources/packages/libs/sqlite3
+License: PUBLICDOMAIN
+Section: libs
+Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
+Architecture: x86
+Installed-Size: 338654
+Filename: libsqlite3_3081101-1_x86.ipk
+Size: 338826
+MD5Sum: 4b7264d8741dd0348d219ba3695c3acc
+SHA256sum: 618b48d86d094c9601ea8aca42e2f5ff95b7d700caa0d81a1f71298c6131bd18
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains the SQLite (v3.x) shared library, used by other
+ programs.
+
+Package: libssh2
+Version: 1.6.0-1
+Depends: libc, libopenssl, zlib
+Source: /home/jason/openwrtpkg/sources/packages/libs/libssh2
+License: BSD
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Jiri Slachta <slachta@cesnet.cz>
+Architecture: x86
+Installed-Size: 61904
+Filename: libssh2_1.6.0-1_x86.ipk
+Size: 62554
+MD5Sum: 51df65b6313e2533c929238ae3fed733
+SHA256sum: 07d1051180d7bec056afc3c65793ab84ccce4d51069bf1f3b706693b47cff0a0
+Description:  libssh2 is a client-side C library implementing the SSH2 protocol.
 
 Package: libxml2
 Version: 2.9.3-1
@@ -285,17 +353,17 @@ SHA256sum: 5a0421e095edb73343048326c68e45cdeae8069e889a6fc402e21044eeec26e4
 Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 
 Package: shadowsocks
-Version: 2.4.3-1
+Version: 2.4.4-1
 Depends: libc, libopenssl, libpthread
 Source: /home/jason/openwrtpkg/sources/openwrt-shadowsocks
 Section: net
 Maintainer: Max Lv <max.c.lv@gmail.com>
 Architecture: x86
-Installed-Size: 221656
-Filename: shadowsocks_2.4.3-1_x86.ipk
-Size: 222131
-MD5Sum: ccd1d94ff4d2a0c1451637b3704c36c2
-SHA256sum: e792287c902cdb331791c68a1d1637210e5392a7b98496f58e20022e69c58ca5
+Installed-Size: 222066
+Filename: shadowsocks_2.4.4-1_x86.ipk
+Size: 222457
+MD5Sum: 6f9f890bb3431a75bf55db93010659f4
+SHA256sum: 5aa5292b67ed8fde6829b6d89c8dd794f0e5d94c97efddc4f978952a01b850c9
 Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 
 Package: shadowvpn
@@ -314,6 +382,25 @@ MD5Sum: 75e236cb5368eeaa913a6752c38f96cd
 SHA256sum: 1e605a5129d31451b0eda1b28cf6a3e5c768e7bb4df04c9309bc9fe73cabc6d4
 Description:  A fast, safe VPN based on libsodium
  with native interface protocol support
+
+Package: sqlite3-cli
+Version: 3081101-1
+Depends: libc, libsqlite3, libncurses, libreadline
+Source: /home/jason/openwrtpkg/sources/packages/libs/sqlite3
+License: PUBLICDOMAIN
+Section: utils
+Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
+Architecture: x86
+Installed-Size: 357120
+Filename: sqlite3-cli_3081101-1_x86.ipk
+Size: 357881
+MD5Sum: 6e76ef1d9004b4a6b35e623e895c1b2a
+SHA256sum: 75a0cb70170405ccbe66f6f0a6743bbb17e88c369aef32e4753960796bd69377
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains a terminal-based front-end to the SQLite (v3.x) library
+ that can evaluate queries interactively and display the results in multiple
+ formats.
 
 Package: tcpping
 Version: 0.2-59e94bd

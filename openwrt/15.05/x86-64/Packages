@@ -15,7 +15,7 @@ SHA256sum: 7d4ed6b62f0090e59a7ecfccbb2db821d29a8befa3e2c4ab269a0bdc92314e4c
 Description:  A DNS forwarder that ignores incorrect(you knew it) responses.
 
 Package: aria2-bt
-Version: 1.19.3-1
+Version: 1.20.0-1
 Depends: libc, zlib, libxml2, libstdcpp, libopenssl
 Source: /home/jason/openwrtpkg/sources/aria2
 License: GPLv2
@@ -23,16 +23,16 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: Jason Tse <jason@mujj.us>
 Architecture: x86_64
-Installed-Size: 771972
-Filename: aria2-bt_1.19.3-1_x86_64.ipk
-Size: 770624
-MD5Sum: c0856ac16a9bf71c7632e0ed8e68fa85
-SHA256sum: d914303575f8db813a9007dbd6976d1f6e15032ce24f7411c7b638120f6103fd
+Installed-Size: 777699
+Filename: aria2-bt_1.20.0-1_x86_64.ipk
+Size: 776388
+MD5Sum: e344bb9782dedd6a2ffeaebe9db8d21b
+SHA256sum: 71c5dbc45b60b54a4c721e74e60391bdb79e8650cfefa61381b32211b5e0a3ff
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
 Package: aria2-full
-Version: 1.19.3-1
+Version: 1.20.0-1
 Depends: libc, zlib, libxml2, libstdcpp, libopenssl, libssh2, libsqlite3
 Source: /home/jason/openwrtpkg/sources/aria2
 License: GPLv2
@@ -40,16 +40,16 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: Jason Tse <jason@mujj.us>
 Architecture: x86_64
-Installed-Size: 782213
-Filename: aria2-full_1.19.3-1_x86_64.ipk
-Size: 780623
-MD5Sum: 2bb5d42c431874c775fd2c1011beab6c
-SHA256sum: 316612e53ac4cbfecb664cecefb6e9e294280284b63dfafe4a9b266f37fbef33
+Installed-Size: 788185
+Filename: aria2-full_1.20.0-1_x86_64.ipk
+Size: 786866
+MD5Sum: e2b581ce268f5c77acdc050f19a10c9d
+SHA256sum: f561dc88b5393e549d3b7d4c192db4dff52688581dfd1f86b11ef3a708cab4d4
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
 Package: aria2
-Version: 1.19.3-1
+Version: 1.20.0-1
 Depends: libc, zlib, libxml2, libstdcpp, libopenssl
 Source: /home/jason/openwrtpkg/sources/aria2
 License: GPLv2
@@ -57,11 +57,11 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: Jason Tse <jason@mujj.us>
 Architecture: x86_64
-Installed-Size: 520198
-Filename: aria2_1.19.3-1_x86_64.ipk
-Size: 519592
-MD5Sum: 806b5b368bc82c04b10d4f71173a5dfc
-SHA256sum: 6635e4eb81656fe76632d064a4f6c418919f45ccc7db8afdcc8eee8d2f43f1b9
+Installed-Size: 524284
+Filename: aria2_1.20.0-1_x86_64.ipk
+Size: 523648
+MD5Sum: 578362d0317958e957b425ab69ab489b
+SHA256sum: 3d97ec8290c0f83e7cef92c12c4e32ad17473c7b2c893ed2bb3b7c71501bb3bf
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 

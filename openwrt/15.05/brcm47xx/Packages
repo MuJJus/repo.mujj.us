@@ -15,7 +15,7 @@ SHA256sum: 092a4dc016c09dadb6fbe3908870ce0a86e7ec6639299a1f341ef6dc9ec3c403
 Description:  A DNS forwarder that ignores incorrect(you knew it) responses.
 
 Package: aria2-bt
-Version: 1.19.3-1
+Version: 1.20.0-1
 Depends: libc, zlib, libxml2, libstdcpp, libopenssl
 Source: /home/jason/openwrtpkg/sources/aria2
 License: GPLv2
@@ -23,16 +23,16 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: Jason Tse <jason@mujj.us>
 Architecture: brcm47xx
-Installed-Size: 914011
-Filename: aria2-bt_1.19.3-1_brcm47xx.ipk
-Size: 913295
-MD5Sum: d36acfd5e5fec8dd30a7260506eb7bd6
-SHA256sum: a863388dd131d527ee0a3471fc4929a48ccf409f51ec973d2e8fdccbcaf23c1d
+Installed-Size: 920030
+Filename: aria2-bt_1.20.0-1_brcm47xx.ipk
+Size: 919357
+MD5Sum: a35b8733bce23785e28cab9528283d04
+SHA256sum: ccf2bf33fd0fa7a3cdb67b32ecee0f77a5bd7f9de8def18067567f184667bd82
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
 Package: aria2-full
-Version: 1.19.3-1
+Version: 1.20.0-1
 Depends: libc, zlib, libxml2, libstdcpp, libopenssl, libssh2, libsqlite3
 Source: /home/jason/openwrtpkg/sources/aria2
 License: GPLv2
@@ -40,16 +40,16 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: Jason Tse <jason@mujj.us>
 Architecture: brcm47xx
-Installed-Size: 926413
-Filename: aria2-full_1.19.3-1_brcm47xx.ipk
-Size: 925722
-MD5Sum: 283424db1a00ef4feac347268e8bc575
-SHA256sum: f80404a642ac551c0c2f138d27b68dd9897a587eab103c922ece2dcf8cf8152f
+Installed-Size: 931848
+Filename: aria2-full_1.20.0-1_brcm47xx.ipk
+Size: 931282
+MD5Sum: b30f33727f705e64514c1199a763fad5
+SHA256sum: 62241fdce769cc10a5e02410ab62ea09501cce5b279c5ebecef979efdf8018af
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
 Package: aria2
-Version: 1.19.3-1
+Version: 1.20.0-1
 Depends: libc, zlib, libxml2, libstdcpp, libopenssl
 Source: /home/jason/openwrtpkg/sources/aria2
 License: GPLv2
@@ -57,11 +57,11 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: Jason Tse <jason@mujj.us>
 Architecture: brcm47xx
-Installed-Size: 618214
-Filename: aria2_1.19.3-1_brcm47xx.ipk
-Size: 617944
-MD5Sum: 72855af87b41a5d75383464b4e3365df
-SHA256sum: a693b5f10660a173418152abe2b3f51542ffd6a0b7a6bb54f780cad73b1ecd41
+Installed-Size: 623840
+Filename: aria2_1.20.0-1_brcm47xx.ipk
+Size: 623635
+MD5Sum: 0d10957c7083472ba08c9a0c748e9173
+SHA256sum: e84a02d4d406d0fb3eac7b304fad59ad53307a0129e48aeb576ea974b8a90306
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 

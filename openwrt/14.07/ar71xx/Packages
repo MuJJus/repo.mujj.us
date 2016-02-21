@@ -15,7 +15,7 @@ SHA256sum: 3faec9a1b4e245af2585235eebf94e1735771db289765f24127e55e4657815b8
 Description:  A DNS forwarder that ignores incorrect(you knew it) responses.
 
 Package: aria2-bt
-Version: 1.19.3-1
+Version: 1.20.0-1
 Depends: libc, zlib, libxml2, libstdcpp, libopenssl
 Source: /home/jason/openwrtpkg/sources/aria2
 License: GPLv2
@@ -23,16 +23,16 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: Jason Tse <jason@mujj.us>
 Architecture: ar71xx
-Installed-Size: 934444
-Filename: aria2-bt_1.19.3-1_ar71xx.ipk
-Size: 932623
-MD5Sum: c76750fa4c1f996b34e238488a45d79f
-SHA256sum: 479c016359e0973e7d4bf9e05bcceaa32880f48b7b61132670d792a4837e324c
+Installed-Size: 940744
+Filename: aria2-bt_1.20.0-1_ar71xx.ipk
+Size: 938799
+MD5Sum: f5a49465e738a46b51ccb4eabc02b435
+SHA256sum: 8fd9514a90f611d2beaf03753dfc0da96542a274ace813ef475c8efd009ff12e
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
 Package: aria2-full
-Version: 1.19.3-1
+Version: 1.20.0-1
 Depends: libc, zlib, libxml2, libstdcpp, libopenssl, libssh2, libsqlite3
 Source: /home/jason/openwrtpkg/sources/aria2
 License: GPLv2
@@ -40,16 +40,16 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: Jason Tse <jason@mujj.us>
 Architecture: ar71xx
-Installed-Size: 946322
-Filename: aria2-full_1.19.3-1_ar71xx.ipk
-Size: 944003
-MD5Sum: 6ead7c31d56c756b871a860498bf3ecc
-SHA256sum: 06ab3e5bac09f1aae5b86d8fc948d304db72707d5b1b752d1e0b71dcd0874f41
+Installed-Size: 952154
+Filename: aria2-full_1.20.0-1_ar71xx.ipk
+Size: 949969
+MD5Sum: 31bda5f1ebbd3fde55463e20dd51ce92
+SHA256sum: a1b2d3be95b708fad108f05f81434b8b355949ca47f7c1809c63e071806466d5
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
 Package: aria2
-Version: 1.19.3-1
+Version: 1.20.0-1
 Depends: libc, zlib, libxml2, libstdcpp, libopenssl
 Source: /home/jason/openwrtpkg/sources/aria2
 License: GPLv2
@@ -57,11 +57,11 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: Jason Tse <jason@mujj.us>
 Architecture: ar71xx
-Installed-Size: 629926
-Filename: aria2_1.19.3-1_ar71xx.ipk
-Size: 628891
-MD5Sum: 3395f35a852901a478a6307a18515d48
-SHA256sum: f55fc1026939833513fa603d9f586dd392b6d6ba8048809feb18653d9e8763fd
+Installed-Size: 634862
+Filename: aria2_1.20.0-1_ar71xx.ipk
+Size: 633809
+MD5Sum: c9f59bb090f9964146c0c0e8ea9af6fa
+SHA256sum: ee9eb4bca4bb777c3208741c62b816911ba06930d6ae5074fbbb032e275f00da
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
